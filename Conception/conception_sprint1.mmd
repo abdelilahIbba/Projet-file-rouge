@@ -1,0 +1,28 @@
+@startuml
+
+class Utilisateur {
+  +id: int
+  +nom: String
+  +email: String
+  +motDePasse: String
+  +créerProfil()
+  +lireProfil()
+  +mettreÀJourProfil()
+  +supprimerProfil()
+}
+
+class Musique {
+  +id: int
+  +titre: String
+  +artiste: String
+  +genre: String
+  +prix: float
+  +télécharger()
+  +lire()
+  +mettreÀJour()
+  +supprimer()
+}
+
+Utilisateur "1" -- "0..*" Musique : Télécharge
+
+@enduml
