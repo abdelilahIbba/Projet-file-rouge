@@ -1,0 +1,15 @@
+@startuml
+actor Utilisateur
+
+usecase "Créer un profil" as UC1
+usecase "Télécharger de la musique" as UC2
+usecase "Fixer les prix des beats" as UC3
+usecase "Aperçu en streaming" as UC4
+usecase "Gérer les ventes" as UC5
+
+Utilisateur -- UC1
+Utilisateur -- UC2
+Utilisateur -- UC3
+Utilisateur -- UC4
+Utilisateur -- UC5
+@enduml
